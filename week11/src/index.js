@@ -23,11 +23,11 @@ window.onload = function () {
 
     // load an image and run the `loadImage` function when it's done
     loader
-        .add('symbol', 'images/symbol.json')
+        .add('dragon', 'images/spineboy.json')
         .on("progress", loadProgressHandler)
         .load(initial);
 
-    var dragon = null;
+    var symbolSpine = null;
 
     function loadProgressHandler(loader, resource) {
         //顯示進度-------------------------------------------------------------------------
@@ -39,39 +39,31 @@ window.onload = function () {
 
     function initial(loader, res) {
         // instantiate the spine animation
-        dragon = new PIXI.spine.Spine(res.symbol.spineData);
-        dragon.skeleton.setToSetupPose();
-        dragon.update(0);
-        dragon.autoUpdate = false;
+        symbolSpine = new PIXI.spine.Spine(res.dragon.spineData);
 
-        // create a container for the spine animation and add the animation to it
-        var dragonCage = new PIXI.Container();
-        dragonCage.addChild(dragon);
+        //symbolSpine.autoUpdate = false;
+        //symbolSpine.scale.set(0.3);
+        symbolSpine.position.set(app.screen.width/2, app.screen.height/2);
 
-        // measure the spine animation and position it inside its container to align it to the origin
-        var localRect = dragon.getLocalBounds();
-        dragon.position.set(-localRect.x, -localRect.y);
+        symbolSpine.skeleton.setToSetupPose();
 
-        // now we can scale, position and rotate the container as any other display object
-        var scale = Math.min(
-            (app.screen.width * 0.7) / dragonCage.width,
-            (app.screen.height * 0.7) / dragonCage.height
-        );
-        dragonCage.scale.set(scale, scale);
-        dragonCage.position.set(
-            (app.screen.width - dragonCage.width) * 0.5,
-            (app.screen.height - dragonCage.height) * 0.5
-        );
+        app.stage.addChild(symbolSpine);
 
-        // add the container to the stage
-        app.stage.addChild(dragonCage);
 
-        // once position and scaled, set the animation to play
-        //dragon.state.setAnimation(0, 'animation', true);
+        //symbolSpine.autoUpdate = false;
+
+        symbolSpine.state.setAnimation(1, 'walk', true);
+        symbolSpine.update(2);
+        symbolSpine.state.setAnimation(0, 'jump', true);
+
+        console.log(symbolSpine.state.getCurrent(1).getAnimationTime());
+        console.log(symbolSpine.state.tracks[0].getAnimationTime());
+
+        //dragon.skeleton.setSkinByName('goblin');    //設定整個骨架的皮膚
 
         app.ticker.add(function () {
-            // update the spine animation, only needed if dragon.autoupdate is set to false
-            dragon.update(0.01666667); // HARDCODED FRAMERATE!
+            console.log(symbolSpine.state.getCurrent(1).getAnimationTime());
+            console.log(symbolSpine.state.tracks[0].getAnimationTime());
         });
     }
 
