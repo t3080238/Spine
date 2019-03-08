@@ -120,16 +120,18 @@ window.onload = function () {
             },
             event: function (track, event) {
                 console.log(track.trackIndex + ' ' + event.data.name + " event")
+                console.log('TCL: initial -> event', event)
+
             }
         });
-        
-    /*symbolSpine.state.addListener({
-        start: function (track) { console.log(track.trackIndex + " Start") },
-        complete: function (track) { console.log(track.trackIndex + " complete") },
-        interrupt: function (track) { console.log(track.trackIndex + " interrupt") },
-        end: function (track) { console.log(track.trackIndex + " end") },
-        event: function (track, event) { console.log(event.data.name + " event") }
-    });*/
+
+        /*symbolSpine.state.addListener({
+            start: function (track) { console.log(track.trackIndex + " Start") },
+            complete: function (track) { console.log(track.trackIndex + " complete") },
+            interrupt: function (track) { console.log(track.trackIndex + " interrupt") },
+            end: function (track) { console.log(track.trackIndex + " end") },
+            event: function (track, event) { console.log(event.data.name + " event") }
+        });*/
 
 
         /*symbolSpine.state.queue.complete = (track) => {
@@ -219,6 +221,7 @@ window.onload = function () {
 
                 symbolSpine.skeleton.setToSetupPose();
                 symbolSpine.state.clearTrack(0);
+                symbolSpine.state.clearTracks();
 
                 console.log('clearTrack(0)')
             }
