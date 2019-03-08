@@ -1,0 +1,251 @@
+
+bigwin_symbol1.png
+size: 2048,1024
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+Body
+  rotate: true
+  xy: 2, 73
+  size: 456, 581
+  orig: 456, 581
+  offset: 0, 0
+  index: -1
+Desk
+  rotate: false
+  xy: 585, 392
+  size: 868, 137
+  orig: 868, 137
+  offset: 0, 0
+  index: -1
+Desk_Smoke
+  rotate: false
+  xy: 2, 531
+  size: 1244, 487
+  orig: 1244, 487
+  offset: 0, 0
+  index: -1
+L arm_1
+  rotate: true
+  xy: 1248, 533
+  size: 151, 242
+  orig: 151, 242
+  offset: 0, 0
+  index: -1
+L arm_3
+  rotate: false
+  xy: 1743, 807
+  size: 238, 211
+  orig: 238, 211
+  offset: 0, 0
+  index: -1
+L hand
+  rotate: false
+  xy: 1248, 686
+  size: 271, 332
+  orig: 271, 332
+  offset: 0, 0
+  index: -1
+L hand_2_under
+  rotate: true
+  xy: 1196, 23
+  size: 101, 125
+  orig: 101, 125
+  offset: 0, 0
+  index: -1
+Light_1
+  rotate: false
+  xy: 1521, 713
+  size: 220, 305
+  orig: 220, 305
+  offset: 0, 0
+  index: -1
+Mouth
+  rotate: true
+  xy: 1983, 909
+  size: 109, 56
+  orig: 109, 56
+  offset: 0, 0
+  index: -1
+R arm
+  rotate: true
+  xy: 852, 198
+  size: 192, 319
+  orig: 192, 319
+  offset: 0, 0
+  index: -1
+R arm_1
+  rotate: true
+  xy: 1743, 651
+  size: 154, 218
+  orig: 154, 218
+  offset: 0, 0
+  index: -1
+R arm_1_under
+  rotate: false
+  xy: 1326, 116
+  size: 112, 138
+  orig: 112, 138
+  offset: 0, 0
+  index: -1
+R arm_2
+  rotate: true
+  xy: 585, 31
+  size: 85, 129
+  orig: 85, 129
+  offset: 0, 0
+  index: -1
+R hand
+  rotate: false
+  xy: 1028, 37
+  size: 166, 159
+  orig: 166, 159
+  offset: 0, 0
+  index: -1
+copper_coin.0001
+  rotate: false
+  xy: 1196, 126
+  size: 128, 128
+  orig: 128, 128
+  offset: 0, 0
+  index: -1
+copper_coin.0002
+  rotate: false
+  xy: 1455, 403
+  size: 128, 128
+  orig: 128, 128
+  offset: 0, 0
+  index: -1
+copper_coin.0003
+  rotate: false
+  xy: 1492, 556
+  size: 128, 128
+  orig: 128, 128
+  offset: 0, 0
+  index: -1
+copper_coin.0004
+  rotate: false
+  xy: 1431, 262
+  size: 128, 128
+  orig: 128, 128
+  offset: 0, 0
+  index: -1
+copper_coin.0005
+  rotate: false
+  xy: 1440, 132
+  size: 128, 128
+  orig: 128, 128
+  offset: 0, 0
+  index: -1
+copper_coin.0006
+  rotate: false
+  xy: 1449, 2
+  size: 128, 128
+  orig: 128, 128
+  offset: 0, 0
+  index: -1
+copper_coin.0007
+  rotate: false
+  xy: 1585, 426
+  size: 128, 128
+  orig: 128, 128
+  offset: 0, 0
+  index: -1
+copper_coin.0008
+  rotate: false
+  xy: 1585, 296
+  size: 128, 128
+  orig: 128, 128
+  offset: 0, 0
+  index: -1
+copper_coin.0009
+  rotate: false
+  xy: 1570, 166
+  size: 128, 128
+  orig: 128, 128
+  offset: 0, 0
+  index: -1
+copper_coin.0010
+  rotate: false
+  xy: 1579, 36
+  size: 128, 128
+  orig: 128, 128
+  offset: 0, 0
+  index: -1
+copper_coin.0011
+  rotate: false
+  xy: 1700, 166
+  size: 128, 128
+  orig: 128, 128
+  offset: 0, 0
+  index: -1
+copper_coin.0012
+  rotate: false
+  xy: 1709, 36
+  size: 128, 128
+  orig: 128, 128
+  offset: 0, 0
+  index: -1
+copper_coin.0013
+  rotate: false
+  xy: 1715, 521
+  size: 128, 128
+  orig: 128, 128
+  offset: 0, 0
+  index: -1
+copper_coin.0014
+  rotate: false
+  xy: 1715, 391
+  size: 128, 128
+  orig: 128, 128
+  offset: 0, 0
+  index: -1
+copper_coin.0015
+  rotate: false
+  xy: 1845, 521
+  size: 128, 128
+  orig: 128, 128
+  offset: 0, 0
+  index: -1
+hat
+  rotate: false
+  xy: 1173, 256
+  size: 256, 134
+  orig: 256, 134
+  offset: 0, 0
+  index: -1
+hat_back
+  rotate: false
+  xy: 2, 30
+  size: 257, 41
+  orig: 257, 41
+  offset: 0, 0
+  index: -1
+hat_cap
+  rotate: false
+  xy: 852, 84
+  size: 174, 112
+  orig: 174, 112
+  offset: 0, 0
+  index: -1
+head
+  rotate: false
+  xy: 585, 118
+  size: 265, 272
+  orig: 265, 272
+  offset: 0, 0
+  index: -1
+point99
+  rotate: false
+  xy: 1173, 236
+  size: 18, 18
+  orig: 18, 18
+  offset: 0, 0
+  index: -1
+shin
+  rotate: false
+  xy: 1323, 6
+  size: 124, 108
+  orig: 124, 108
+  offset: 0, 0
+  index: -1
